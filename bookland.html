@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Book search</title>
+    <script src="bookland.js" defer></script>
+    <style>
+        @import "reset.css";
+        @import "bookland.css";
+    </style>
+</head>
+
+<body>
+    <h1 id="websiteTitle">bookland</h1>
+    <div id="bookSearchSection">
+        <form id="bookSearchForm">
+            <table id="bookSearchTable">
+                <tr>
+                    <td class="inputLabel"><p>Author Name:</p></td>
+                    <td><input type="text" id="authorNameInput" name="authorNameInput" placeholder="Enter the author's name"/></td>
+                </tr>
+                <tr>
+                    <td class="inputLabel"><p>Book Title:</p></td>
+                    <td><input type="text" id="bookTitleInput" name="bookTitleInput" placeholder="Enter the book title"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" class="button" id="findBook" value="Find Book" />
+                        <input type="button" class="button" id="clearInfo" value="Clear Info" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <textarea id="searchBox" readonly placeholder="Enter the author and/or book title above, and search results will appear here."></textarea>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
